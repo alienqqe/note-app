@@ -1,0 +1,17 @@
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  .submit-btn {
+    border-radius: 50%;
+    background-color: violet;
+    border: none;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    text-decoration: none;
+  }
+  input {
+    border-radius: 50px;
+    max-width: 2000px;
+  }
+}
