@@ -16,7 +16,7 @@ export const firebaseConfig = {
   appId: '1:797788302377:web:f7d42fa8708f898d6a8038',
 
   databaseURL:
-    'https://notes-35ad3-default-rtdb.europe-west1.firebasedatabase.app',
+    'https://notes-35ad3-default-rtdb.europe-west1.firebasedatabase.app/',
 }
 
 export const app = initializeApp(firebaseConfig)

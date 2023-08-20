@@ -1,6 +1,42 @@
 .main-container {
   width: 100vw;
   height: 100vh;
+
+  .note-container {
+    max-width: 500px;
+    background: #2193b0; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #6dd5ed,
+      #2193b0
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #6dd5ed,
+      #2193b0
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color-scheme: dark;
+  }
+  .note {
+    margin-top: 50px;
+    margin-right: 50px;
+    background: #232526; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #414345,
+      #232526
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #414345,
+      #232526
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    width: auto;
+    height: auto;
+    border-radius: 40px;
+  }
   .submit-btn {
     border-radius: 50%;
     background-color: violet;
@@ -12,6 +48,25 @@
   }
   input {
     border-radius: 50px;
-    max-width: 2000px;
+  }
+  .input-container {
+    position: absolute;
+    display: flex;
+    width: max-content;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.notes {
+  .delete-button {
+    opacity: 0;
+    cursor: pointer;
+  }
+}
+
+.notes:hover {
+  .delete-button {
+    opacity: 1;
   }
 }
